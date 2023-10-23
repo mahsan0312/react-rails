@@ -5,9 +5,8 @@ const Hello = () => {
   return (<div>Hello, My name is Muhammad Ahsan</div>)
 }
 
-// Use it if you don't plan to use "remount"
-// document.addEventListener('DOMContentLoaded', () => {
-  // ReactDOM.render(<Hello />, document.getElementById('hello'))
-// })
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(<Hello />, document.getElementById('hello'))
+})
 
 export default Hello

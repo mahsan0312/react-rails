@@ -1,0 +1,48 @@
+Arguments: 
+  /home/ahsan/.nvm/versions/node/v20.5.0/bin/node /home/ahsan/.yvm/versions/v1.22.19/bin/yarn.js install
+
+PATH: 
+  /home/ahsan/.rvm/gems/ruby-2.7.2/bin:/home/ahsan/.rvm/gems/ruby-2.7.2@global/bin:/home/ahsan/.rvm/rubies/ruby-2.7.2/bin:/home/ahsan/.rvm/bin:/path/to/java/bin:/home/ahsan/.nvm/versions/node/v20.5.0/bin:/home/ahsan/.yvm/shim:/home/ahsan/.yarn/bin:/home/ahsan/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received [Object: null prototype]
+      at new NodeError (node:internal/errors:405:5)
+      at validateString (node:internal/validators:162:11)
+      at Object.isAbsolute (node:path:1160:5)
+      at module.exports.exports.default (/home/ahsan/.yvm/versions/v1.22.19/lib/cli.js:97087:16)
+      at /home/ahsan/.yvm/versions/v1.22.19/lib/cli.js:51330:63
+      at Generator.next (<anonymous>)
+      at step (/home/ahsan/.yvm/versions/v1.22.19/lib/cli.js:310:30)
+      at /home/ahsan/.yvm/versions/v1.22.19/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "app",
+    "private": "true",
+    "dependencies": {
+      "@hotwired/stimulus": "^3.2.2",
+      "@hotwired/turbo-rails": "^7.3.0",
+      "esbuild": "^0.19.5",
+      "scripts": {
+        "build": "webpack --mode production"
+      },
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "remount": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
